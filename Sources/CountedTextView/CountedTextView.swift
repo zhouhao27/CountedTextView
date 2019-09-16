@@ -15,11 +15,10 @@ public struct CountedTextView: UIViewRepresentable {
   
   public func makeUIView(context: UIViewRepresentableContext<CountedTextView>) -> UICountedTextView {
     let view = UICountedTextView(frame: CGRect.zero)
-    view.text = "This is a test"
     view.borderColor = UIColor.gray
     view.borderWidth = 1
     view.radius = 5
-    view.placeHolder = self.placeHolder
+    view.placeHolder = self.placeHolder    
     view.onTextChanged = {
       text in
       self.text = text

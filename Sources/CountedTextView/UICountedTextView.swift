@@ -83,6 +83,8 @@ public class UICountedTextView: UIView, UITextViewDelegate {
     self.addSubview(labelCount)
     labelCount.translatesAutoresizingMaskIntoConstraints = false
     labelCount.textAlignment = .right
+    labelCount.textColor = .gray
+    labelCount.font = UIFont.systemFont(ofSize: 15)
     self.labelCount = labelCount
     
     // TextView
