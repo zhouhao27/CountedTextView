@@ -153,7 +153,7 @@ public class UICountedTextView: UIView, UITextViewDelegate {
     return textView.text.count + (text.count - range.length) <= maxCharactersAllowed
   }
   
-  public func textViewDidChange(_ textView: UITextView) {
+  public func textViewDidChange(_ textView: UITextView) {    
     if let call = onTextChanged {
       call(textView.text)
     }

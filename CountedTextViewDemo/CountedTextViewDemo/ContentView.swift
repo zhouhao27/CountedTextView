@@ -14,7 +14,7 @@ struct ContentView: View {
   
   var body: some View {
     VStack {
-      CountedTextView(text: $name, placeHolder: "Please input your name")
+      CountedTextView(text: $name, placeHolder: "Please input your name", maxAllowedCharacters:25)
       TextField("Test", text: $name)
     }.frame(minHeight: 50, maxHeight: 200, alignment: .center)
   }
